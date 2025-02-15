@@ -1,6 +1,6 @@
-import './AboutUs.css';
+import './About.css';
 
-function AboutUs() {
+function About() {
   return (
     <section id="about-us" className="padded">
         <div className="container">
@@ -11,4 +11,4 @@ function AboutUs() {
   )
 }
 
-export default AboutUs;
+export default About;
