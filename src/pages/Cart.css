@@ -1,0 +1,10 @@
+.delete-icon{
+    cursor: pointer;
+}
+.delete-icon:hover{
+    color: rgb(173, 26, 26);
+}
+
+.quantity-added-input{
+    width: 6.25rem;
+}

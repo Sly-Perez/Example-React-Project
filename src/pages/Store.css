@@ -1,0 +1,10 @@
+#categories-list{
+    .badge{
+        right: 0.0313rem;
+    }
+
+    .list-group-item.active{
+        background-color: var(--firstColor);
+        border-color: var(--secondColor);
+    }
+}

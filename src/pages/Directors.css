@@ -1,0 +1,13 @@
+#section-directors i{
+    cursor: pointer;
+    display: none;
+}
+#section-directors i:hover{
+    color: var(--secondColor);
+}
+
+#section-directors table tr:hover{
+    i{
+        display: inline;
+    }
+}
