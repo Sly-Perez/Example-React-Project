@@ -1,0 +1,58 @@
+.former-price{
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    color: rgb(255, 0, 0);
+    margin-left: 0.313rem;
+}
+
+.modal-overview-icon{
+    background-color: #fff;
+    position: absolute;
+    right: -3.125rem;
+    top: 6.25rem;
+    padding: 0.625rem 0.875rem;
+    border-radius: 50%;
+    border: solid 0.063rem var(--black-color);
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal-overview-icon:hover{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.card:hover .modal-overview-icon{
+    opacity: 1;
+    right: 0.625rem;
+}
+
+.card{
+    overflow: hidden;
+}
+.card img{
+    transition: all 0.3s ease-in-out;
+}
+.card:hover img{
+    transform: scale(1.2, 1.2);
+}
+
+
+.on-sale-percentage{
+    position: absolute;
+    background-color: rgb(151, 35, 35);
+    color: var(--white-color);
+    padding: 0.313rem 0.625rem;
+    right: 0;
+    border-radius: 0 0 0 0.625rem;
+}
+
+.cart-icon{
+    margin-left: 0.313rem;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+.cart-icon:hover{
+    color: var(--firstColor);
+}
