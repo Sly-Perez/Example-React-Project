@@ -1,0 +1,5 @@
+.navbar-nav .nav-link.active{
+    color: var(--secondColor);
+    box-shadow: 0 0.125rem var(--thirdColor);
+    width: fit-content;
+}
