@@ -4,11 +4,14 @@ import { useParams } from "react-router-dom";
 
 import { API_URL } from "../utils/API_URL";
 
+import { addToCart } from '../utils/AddToCart'
+
 const DetailsProduct = () => {
 
     const params = useParams();
 
     const [selectedProduct, setSelectedProduct] = useState([]);
+    const [quantity, setQuantity] = useState(1);
     
     useEffect(()=>{
             readService(params.productId);
@@ -89,6 +92,18 @@ const DetailsProduct = () => {
                                 <tr>
                                     <th>Customer attention</th>
                                     <td>{selectedProduct.telefono}</td>
+                                </tr>
+                                <tr>
+                                    <th>Quantity Added</th>
+                                    <td>
+                                        <input type="number" className="form-control" 
+                                        defaultValue="1" name="" min="1" 
+                                        value={quantity} onChange={(event)=> setQuantity(event.target.value)}
+                                        />
+                                        <button className="btn btn-primary mt-2"
+                                            onClick={() => addToCart(selectedProduct, quantity)}
+                                        >Add to Cart</button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

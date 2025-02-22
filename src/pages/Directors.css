@@ -11,3 +11,10 @@
         display: inline;
     }
 }
+
+#section-directors table thead tr th:nth-child(4){
+    width: 3.125rem;
+}
+#section-directors table thead tr th:last-child{
+    width: 3.125rem;
+}
